@@ -1,0 +1,28 @@
+{
+  "name": "aradna-nankani",
+  "version": "1.0.0",
+  "description": "Assessment for Node.js fundamentals",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "nodejs",
+    "assessment",
+    "npm",
+    "chalk",
+    "dotenv"
+  ],
+  "author": "Aradna Nankani",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

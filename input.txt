@@ -1,0 +1,33 @@
+Text file
+Aradna 
+
+
+
+
+🔹 Approaches Used
+                  - Callbacks
+
+- Function: processFileCallback(filename, callback)
+- Uses Node’s traditional callback style (fs.readFile, fs.writeFile).
+- You pass a callback function that receives either an error or a success message.
+- Example flow:
+- Read file → convert to uppercase → write new file → call callback(err, result).
+
+                        - Promises 
+- Function: processFilePromise(filename)
+- Uses fs.promises API which returns promises.
+- You chain .then() for success and .catch() for errors.
+
+- Example flow:
+- Read file → .then() convert to uppercase → .then() write new file → .catch() handle errors.
+
+                     - Async/Await
+- Function: processFileAsync(filename)
+- Uses async function with await for cleaner, synchronous-looking code.
+- Errors are handled with try/catch.
+
+- Example flow:
+- await fsPromises.readFile() → convert to uppercase → await fsPromises.writeFile() → return success message.
+
+
+
